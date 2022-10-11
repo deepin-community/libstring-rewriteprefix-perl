@@ -1,0 +1,24 @@
+Source: libstring-rewriteprefix-perl
+Maintainer: Debian Perl Group <pkg-perl-maintainers@lists.alioth.debian.org>
+Uploaders: Ansgar Burchardt <ansgar@debian.org>
+Section: perl
+Testsuite: autopkgtest-pkg-perl
+Priority: optional
+Build-Depends: debhelper-compat (= 12)
+Build-Depends-Indep: libsub-exporter-perl <!nocheck>,
+                     libtest-simple-perl <!nocheck>,
+                     perl
+Standards-Version: 4.5.0
+Vcs-Browser: https://salsa.debian.org/perl-team/modules/packages/libstring-rewriteprefix-perl
+Vcs-Git: https://salsa.debian.org/perl-team/modules/packages/libstring-rewriteprefix-perl.git
+Homepage: https://metacpan.org/release/String-RewritePrefix
+Rules-Requires-Root: no
+
+Package: libstring-rewriteprefix-perl
+Architecture: all
+Depends: ${misc:Depends},
+         ${perl:Depends},
+         libsub-exporter-perl
+Description: module to rewrite strings based on a set of known prefixes
+ String::RewritePrefix rewrites all of the given strings based on a
+ user-specified set of rules.
